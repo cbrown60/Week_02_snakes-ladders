@@ -6,7 +6,7 @@ class Player
     @name = name
     @counter = counter
     @die = die
-    @counter_position = 1
+    @counter_position = 0
     
   end
 

@@ -20,8 +20,8 @@ def setup()
         tail: 5
         },
         {
-          head: 13,
-          tail: 8
+          head: 6,
+          tail: 1
         }
 
       ]
@@ -33,7 +33,7 @@ def setup()
       },
       {
         bottom: 12,
-        top: 23
+        top: 24
       }
 
     ]
@@ -45,27 +45,29 @@ def setup()
 
 end
 
-
 def test_player1_and_player2_values
-assert_equal("Chris", @controller.player1.name)
-assert_equal("Robert", @controller.player2.name)
+  assert_equal("Chris", @controller.player1.name)
+  assert_equal("Robert", @controller.player2.name)
 end
 
 def test_get_current_player
   assert_equal(@player1, @controller.get_current_player(@player2))
 end
 
+# def test_players_change
+#   for i in (1..100) do
+#     @controller.take_turn()
+#   end
+# end
+
 def test_players_change
-  for i in (1..100) do
     @controller.take_turn()
-  end
 end
 
 
-
-  def test_update_position_of_current_player
-    @controller.update_position_of_current_player(@player1, 5)
-  end
+# def test_update_position_of_current_player
+ 
+# end
 
 
 
