@@ -1,7 +1,9 @@
 class Player 
-  attr_reader :counter 
+  attr_reader :counter, :name
+  attr_accessor :counter_position
 
-  def initialize (counter, die)
+  def initialize (name, counter, die)
+    @name = name
     @counter = counter
     @die = die
     @counter_position = 1
@@ -10,7 +12,7 @@ class Player
 
 def throw_die
   
- @result = @die.throw 
+ @throw_result = @die.throw 
 
 end
 

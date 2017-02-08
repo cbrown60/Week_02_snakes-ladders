@@ -4,7 +4,6 @@ class Board
   @number_of_squares = number_of_squares
   @snakes = snakes
   @ladders = ladders
-
 end
 
 def number_of_squares_on_board
