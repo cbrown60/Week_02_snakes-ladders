@@ -56,11 +56,16 @@ def test_get_current_player
 end
 
 def test_players_change
-for i in (1..100) do
-  @controller.take_turn()
+  for i in (1..100) do
+    @controller.take_turn()
+  end
 end
 
-end
+
+
+  def test_update_position_of_current_player
+    @controller.update_position_of_current_player(@player1, 5)
+  end
 
 
 
