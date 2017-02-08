@@ -13,11 +13,10 @@ end
 def get_snake_head_squares
  snake_head_squares = []
  for head_squares in @snakes 
- 
- snake_head_squares.push(head_squares[:head])
+  snake_head_squares.push(head_squares[:head])
  end
+ 
  return snake_head_squares
-
 
 end 
 

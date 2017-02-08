@@ -20,24 +20,39 @@ def setup()
         tail: 5
         },
         {
-          head: 6,
-          tail: 1
+          head: 50,
+          tail: 30
+        },
+        {
+          head: 70,
+          tail: 60
+        },
+        {
+          head: 80,
+          tail: 60
         }
 
       ]
 
     @ladders = [
       {
-        bottom: 4,
-        top: 17
+        bottom: 14,
+        top: 22
       },
       {
-        bottom: 12,
-        top: 24
+        bottom: 24,
+        top: 42
+      },
+      {
+        bottom: 54,
+        top: 62
+      },
+      {
+        bottom: 74,
+        top: 92
       }
-
     ]
-  @squares = 25
+  @squares = 100
 
   @board = Board.new(@squares, @snakes, @ladders)
 
@@ -62,6 +77,11 @@ end
 
 def test_players_change
     @controller.take_turn()
+end
+
+def update_position_of_current_player
+
+  
 end
 
 
