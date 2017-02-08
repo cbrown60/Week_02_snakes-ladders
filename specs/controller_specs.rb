@@ -51,5 +51,18 @@ assert_equal("Chris", @controller.player1.name)
 assert_equal("Robert", @controller.player2.name)
 end
 
+def test_get_current_player
+  assert_equal(@player1, @controller.get_current_player(@player2))
+end
+
+def test_players_change
+for i in (1..100) do
+  @controller.take_turn()
+end
+
+end
+
+
+
 
 end
